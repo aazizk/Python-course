@@ -55,32 +55,32 @@ for owner in Transaction_Owner:
                        margins_name="Total")
         print("pivot done")    
         if owner in Owner_A:
-            with pd.ExcelWriter('a.xlsx', mode='a', engine="openpyxl", if_sheet_exists="replace") as writer_a:
+            with pd.ExcelWriter('./result/a.xlsx', mode='a', engine="openpyxl", if_sheet_exists="replace") as writer_a:
             # writing to the owner sheet
                 pivot.to_excel(writer_a, sheet_name=owner, index=True)
             logging.info(f'DataFrames are written to Excel File {owner} successfully.')
         elif owner in Owner_B:
-            with pd.ExcelWriter('b.xlsx', mode='a', engine="openpyxl", if_sheet_exists="replace") as writer_b:
+            with pd.ExcelWriter('./result/b.xlsx', mode='a', engine="openpyxl", if_sheet_exists="replace") as writer_b:
             # writing to the owner sheet
                 pivot.to_excel(writer_b, sheet_name=owner, index=True)
             logging.info(f'DataFrames are written to Excel File {owner} successfully.')
         elif owner in Owner_C:
-            with pd.ExcelWriter('c.xlsx', mode='a', engine="openpyxl", if_sheet_exists="replace") as writer_c:
+            with pd.ExcelWriter('./result/c.xlsx', mode='a', engine="openpyxl", if_sheet_exists="replace") as writer_c:
             # writing to the owner sheet
                 pivot.to_excel(writer_c, sheet_name=owner, index=True)
             logging.info(f'DataFrames are written to Excel File {owner} successfully.')
         elif owner in Owner_D:
-            with pd.ExcelWriter('d.xlsx', mode='a', engine="openpyxl", if_sheet_exists="replace") as writer_d:
+            with pd.ExcelWriter('./result/d.xlsx', mode='a', engine="openpyxl", if_sheet_exists="replace") as writer_d:
             # writing to the owner sheet
                 pivot.to_excel(writer_d, sheet_name=owner, index=True)
             logging.info(f'DataFrames are written to Excel File {owner} successfully.')
         elif owner in Owner_E:
-            with pd.ExcelWriter('e.xlsx', mode='a', engine="openpyxl", if_sheet_exists="replace") as writer_e:
+            with pd.ExcelWriter('./result/e.xlsx', mode='a', engine="openpyxl", if_sheet_exists="replace") as writer_e:
             # writing to the owner sheet
                 pivot.to_excel(writer_e, sheet_name=owner, index=True)
             logging.info(f'DataFrames are written to Excel File {owner} successfully.')
         elif owner in Owner_F:
-            with pd.ExcelWriter('f.xlsx', mode='a', engine="openpyxl", if_sheet_exists="replace") as writer_f:
+            with pd.ExcelWriter('./result/f.xlsx', mode='a', engine="openpyxl", if_sheet_exists="replace") as writer_f:
             # writing to the owner sheet
                 pivot.to_excel(writer_f, sheet_name=owner, index=True)
             logging.info(f'DataFrames are written to Excel File {owner} successfully.')
